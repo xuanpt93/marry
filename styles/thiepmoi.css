@@ -87,3 +87,26 @@ body {
 .rsvp-button:hover {
     background-color: #b71c1c;
 }
+
+.card{
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/anhnen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thiepmoiImg{
+    width: 33%;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+
+}
+
+.thiepmoiImg img{
+    border-radius: 15px;
+}

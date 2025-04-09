@@ -235,3 +235,73 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+
+/* đếm ngược thời gian */
+/* .countPT {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+  } */
+
+
+
+  .countdown-box {
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .time-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .time-box {
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 90px;
+    height: 90px;
+    text-align: center;
+    transition: 0.3s;
+    border: 3px solid #f23b43;
+  }
+
+  .time-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .number {
+    font-size: 24px;
+    color: #f23b43;
+  }
+
+  .label {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #444;
+    font-weight: lighter;
+  }
+
+  #after-message {
+    display: none;
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 20px;
+    height: 100px;
+    font-style: italic;
+  }

@@ -383,8 +383,35 @@
         <div class="col-sm-8 col-xs-12">
           <div class="count-titles wow fadeInDown">
             <h2>Wedding Countdown</h2>
-            <div id="clock" data-date="2025-08-01" data-text-day="Ngày" data-text-hour="Giờ" data-text-minute="Phút"
-              data-text-second="Giây"></div>
+            <div id="after-message">Cuối cùng câu chuyện của chúng ta đã tới hồi kết!<br> <br> Cùng nhau bước tiếp nào <br> <br> let go! 🎉</div>
+            <!-- <div id="clock" data-date="2025-08-01" data-text-day="Ngày" data-text-hour="Giờ" data-text-minute="Phút"
+              data-text-second="Giây"> -->
+            <!-- </div> -->
+            <div class="countPT">
+              <div class="countdown-box" id="countdown-box">
+                <div class="time-container">
+                  <div class="time-box">
+                    <div class="number" id="days">0</div>
+                    <div class="label">Ngày</div>
+                  </div>
+                  <div class="time-box">
+                    <div class="number" id="hours">0</div>
+                    <div class="label">Giờ</div>
+                  </div>
+                  <div class="time-box">
+                    <div class="number" id="minutes">0</div>
+                    <div class="label">Phút</div>
+                  </div>
+                  <div class="time-box">
+                    <div class="number" id="seconds">0</div>
+                    <div class="label">Giây</div>
+                  </div>
+                </div>
+              </div>
+            
+              
+            </div>
+
           </div>
         </div>
         <div class="col-sm-4">
@@ -995,6 +1022,43 @@
     </ul>
   </div>
 
+  <!-- đếm ngược thời gian -->
+  <script>
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
+    const countdownBox = document.getElementById('countdown-box');
+    const afterMessage = document.getElementById('after-message');
+
+    const now = new Date();
+    const target = new Date(now.getTime() + 3000);
+
+    function updateCountdown() {
+      const current = new Date();
+      const diff = target - current;
+
+      if (diff <= 0) {
+        clearInterval(timer);
+        countdownBox.style.display = 'none';
+        afterMessage.style.display = 'block';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      daysEl.textContent = days;
+      hoursEl.textContent = hours;
+      minutesEl.textContent = minutes;
+      secondsEl.textContent = seconds;
+    }
+
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
+  </script>
 
   <script type="text/javascript">
     function parseJsonRecursively(jsonString) {
