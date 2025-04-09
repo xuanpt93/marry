@@ -99,7 +99,6 @@ body {
 }
 
 .thiepmoiImg{
-    width: 33%;
     padding-top: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -109,4 +108,6 @@ body {
 
 .thiepmoiImg img{
     border-radius: 15px;
+    height: 400px;
+    width: 850px;
 }
