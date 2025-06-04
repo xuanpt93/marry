@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Xuân & Mai Wedding</title>
+  <title>Xuân & Vân Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Phạm Thanh Xuân &amp; Hà Ánh Phương Mai - Our wedding date: 2024-11-10 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại" />
+    content="Phạm Thanh Xuân &amp; Nguyễn Thị Vân - Our wedding date: 2024-11-10 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại" />
   <meta name="keywords"
-    content="Wedding,Phạm Thanh Xuân,Hà Ánh Phương Mai,Wedding website, Website đám cưới, Tạo website đám cưới miễn phí" />
+    content="Wedding,Phạm Thanh Xuân,Nguyễn Thị Vân,Wedding website, Website đám cưới, Tạo website đám cưới miễn phí" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="application-name" content="iWedding" />
-  <meta property="og:site_name" content="Phạm Thanh Xuân &amp; Hà Ánh Phương Mai" />
+  <meta property="og:site_name" content="Phạm Thanh Xuân &amp; Nguyễn Thị Vân" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Phạm Thanh Xuân &amp; Hà Ánh Phương Mai Wedding site!" />
+  <meta property="og:title" content="Phạm Thanh Xuân &amp; Nguyễn Thị Vân Wedding site!" />
   <meta property="og:description"
-    content="Phạm Thanh Xuân &amp; Hà Ánh Phương Mai - Our wedding date: 2022-12-22 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại" />
+    content="Phạm Thanh Xuân &amp; Nguyễn Thị Vân - Our wedding date: 2022-12-22 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại" />
   <meta property="og:image" content="images/DSC01180.jpg" />
   <meta property="og:image:url" content="images/DSC01180.jpg" />
   <meta property="og:image:secure_url" content="images/DSC01180.jpg" />
@@ -28,8 +28,8 @@
     href="https://preview.iwedding.info/templates/template18/css/style.css?v=20241021" />
   <link rel="stylesheet" type="text/css"
     href="https://preview.iwedding.info/templates/template18/css/responsive.css?v=20241021" />
-  
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <link href="https://preview.iwedding.info/templates/template18/css/plugin.css?v=20241021" rel="stylesheet"
     type="text/css" />
@@ -79,12 +79,12 @@
         <div class="logo pull-left">
           <a href="/">
             <h1 style="font-size: 25px">
-              X<span class="main-color"><i class="fa fa-heart" style="margin: 5px 5px 5px 10px; color: red"></i></span>M
+              X<span class="main-color"><i class="fa fa-heart" style="margin: 5px 5px 5px 10px; color: red"></i></span>V
             </h1>
           </a>
           <a href="/" class="sticky-logo">
             <h1 style="font-size: 25px">
-              X<span class="main-color"><i class="fa fa-heart" style="margin: 5px 5px 5px 10px; color: red"></i></span>M
+              X<span class="main-color"><i class="fa fa-heart" style="margin: 5px 5px 5px 10px; color: red"></i></span>V
             </h1>
           </a>
         </div>
@@ -113,16 +113,16 @@
               <a href="#the-gallery">Album Hình Cưới</a>
             </li>
 
-<!--            <li class="active">-->
-<!--              <a href="#rsvp">Sổ Lưu Bút</a>-->
-<!--            </li>-->
+            <!--            <li class="active">-->
+            <!--              <a href="#rsvp">Sổ Lưu Bút</a>-->
+            <!--            </li>-->
 
             <li class="active">
               <a href="javascript:void(0)" class="buttonDonate">Mừng cưới</a>
             </li>
             <li class="active">
-              <a href="javascript:void(1)"id ="showPopup">Thiệp mời</a>
-          </li>
+              <a href="javascript:void(1)" id="showPopup">Thiệp mời</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -132,83 +132,85 @@
 
 
 
-<div class="NhacNen">
+  <div class="NhacNen">
 
-  <button id="toggleMusic">
-    <i id="musicIcon" class="fas fa-volume-up icon"></i>
-  </button>
-  
-  <audio id="backgroundMusic" loop>
+    <button id="toggleMusic">
+      <i id="musicIcon" class="fas fa-volume-up icon"></i>
+    </button>
+
+    <audio id="backgroundMusic" loop>
       <source src="./music/nhacnen.mp3" type="audio/mpeg">
-  </audio>
+    </audio>
 
-  <script>
-          document.addEventListener("click", function() {
-            let audio = document.getElementById("backgroundMusic");
-            let musicIcon = document.getElementById("musicIcon");
-            let button = document.getElementById("toggleMusic");
+    <script>
+      document.addEventListener("click", function () {
+        let audio = document.getElementById("backgroundMusic");
+        let musicIcon = document.getElementById("musicIcon");
+        let button = document.getElementById("toggleMusic");
 
-            if (audio.paused) {
-                let playPromise = audio.play();
-                if (playPromise !== undefined) {
-                    playPromise.then(() => {
-                      
-                        button.prepend(musicIcon);
-                        musicIcon.className = "fas fa-volume-mute icon";
-                    }).catch(error => {
-                        console.log("Không thể phát nhạc: ", error);
-                    });
-                }
-              }
-            // } else {
-            //   audio.pause();
-                
-            //     button.prepend(musicIcon);
-            //     musicIcon.className = "fas fa-volume-up icon";
-            //     musicIcon.setAttribute('data-tooltip', 'Phát nhạc'); // Cập nhật tooltip
-            // }
-        });
-  </script>
-</div>
+        if (audio.paused) {
+          let playPromise = audio.play();
+          if (playPromise !== undefined) {
+            playPromise.then(() => {
 
+              button.prepend(musicIcon);
+              musicIcon.className = "fas fa-volume-mute icon";
+            }).catch(error => {
+              console.log("Không thể phát nhạc: ", error);
+            });
+          }
+        }
+        // } else {
+        //   audio.pause();
 
-<div>
-
-  <!-- Popup và overlay -->
-  <div class="popup-overlay" id="popupOverlay"></div>
-  <div class="popup" id="popup">
-      <img src="./images/thiepmoi.png" alt="">
-      <button id="closePopup">Đóng Thiệp</button>
+        //     button.prepend(musicIcon);
+        //     musicIcon.className = "fas fa-volume-up icon";
+        //     musicIcon.setAttribute('data-tooltip', 'Phát nhạc'); // Cập nhật tooltip
+        // }
+      });
+    </script>
   </div>
 
-  <script>
-      // Lấy các phần tử cần thiết
-      const popup = document.getElementById('popup');
-        const popupOverlay = document.getElementById('popupOverlay');
-        const showPopupLink = document.getElementById('showPopup');
-        const closePopupBtn = document.getElementById('closePopup');
 
-        // Hiển thị popup khi click vào thẻ <a>
-        showPopupLink.addEventListener('click', function(event) {
-            event.preventDefault(); // Ngừng hành động mặc định của thẻ <a>
-            popup.style.display = 'block';
-            popupOverlay.style.display = 'block';
+  <div>
+    <!-- Popup và overlay -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup" id="popup">
+      <img src="./images/thiepmoi.png" alt="">
+      <button id="closePopup">Đóng Thiệp</button>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const popup = document.getElementById("popup");
+        const popupOverlay = document.getElementById("popupOverlay");
+        const closePopupBtn = document.getElementById("closePopup");
+
+        document.addEventListener("click", function (event) {
+          const target = event.target;
+
+          // Kiểm tra cả text 'Thiệp mời' vì menu clone không còn id
+          if (
+            target.tagName === "A" &&
+            target.textContent.trim() === "Thiệp mời"
+          ) {
+            event.preventDefault();
+            if (popup && popupOverlay) {
+              popup.style.display = "block";
+              popupOverlay.style.display = "block";
+            }
+          }
+
+          // Đóng popup nếu click vào nút hoặc overlay
+          if (target === closePopupBtn || target === popupOverlay) {
+            popup.style.display = "none";
+            popupOverlay.style.display = "none";
+          }
         });
+      });
+    </script>
 
-        // Đóng popup khi click vào nút đóng
-        closePopupBtn.addEventListener('click', function() {
-            popup.style.display = 'none';
-            popupOverlay.style.display = 'none';
-        });
-
-        // Đóng popup khi click vào overlay ngoài popup
-        popupOverlay.addEventListener('click', function() {
-            popup.style.display = 'none';
-            popupOverlay.style.display = 'none';
-        });
-  </script>
-
-</div>
+  </div>
 
 
 
@@ -225,7 +227,7 @@
       </div>
       <h3>We’re Getting Married!</h3>
       <h2 style="font-size: 38px">
-        <span>Thanh Xuân</span> &amp; <span>Phương Mai</span>
+        <span>Thanh Xuân</span> &amp; <span>Ánh Vân</span>
       </h2>
       <div class="text-date">
         <p style="background: #ec232875">
@@ -309,7 +311,7 @@
             </div>
             <div class="about-couple">
               <div class="about-top">
-                <h3>Hà Ánh Phương Mai</h3>
+                <h3>Nguyễn Thị Vân</h3>
               </div>
 
               <div class="cp-detail">
@@ -345,13 +347,13 @@
       <div class="row button-accessibilities">
         <div class="col col-lg-12">
           <div class="text-center btn-container">
-<!--            <a href="#rsvp" class="accessibility-btn album btn section-button">-->
-<!--              <span class="content-button">-->
-<!--                <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/wishes.png"-->
-<!--                  alt="access-btn" loading="lazy" />-->
-<!--                Gửi lời chúc-->
-<!--              </span>-->
-<!--            </a>-->
+            <!--            <a href="#rsvp" class="accessibility-btn album btn section-button">-->
+            <!--              <span class="content-button">-->
+            <!--                <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/wishes.png"-->
+            <!--                  alt="access-btn" loading="lazy" />-->
+            <!--                Gửi lời chúc-->
+            <!--              </span>-->
+            <!--            </a>-->
             <a href="javascript:void(0)" class="accessibility-btn album btn section-button buttonDonate">
               <span class="content-button">
                 <img class="access-section-icon"
@@ -383,7 +385,9 @@
         <div class="col-sm-8 col-xs-12">
           <div class="count-titles wow fadeInDown">
             <h2>Wedding Countdown</h2>
-            <div id="after-message">Cuối cùng câu chuyện của chúng ta đã tới hồi kết!<br> <br> Cùng nhau bước tiếp nào <br> <br> let go! 🎉</div>
+            
+            <div id="after-message">Cuối cùng câu chuyện của chúng ta đã tới hồi kết!<br> <br> Cùng nhau bước tiếp nào
+              <br> <br> let go! 🎉</div>
             <!-- <div id="clock" data-date="2025-08-01" data-text-day="Ngày" data-text-hour="Giờ" data-text-minute="Phút"
               data-text-second="Giây"> -->
             <!-- </div> -->
@@ -408,8 +412,6 @@
                   </div>
                 </div>
               </div>
-            
-              
             </div>
 
           </div>
@@ -450,41 +452,27 @@
               <div class="row">
                 <div class="col-12 col-sm-12 col-md-5">
                   <div class="image-wrap">
-                    <img class="event-image"
-                      src="images/DSC01051.jpg"
-                      alt="LỄ ĂN HỎI NHÀ NỮ" loading="lazy" />
+                    <img class="event-image" src="images/DSC01051.jpg" alt="LỄ ĂN HỎI NHÀ NỮ" loading="lazy" />
                   </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-7">
                   <div class="event-title text-center-sm">
                     <ul>
                       <li class="text-center">
-                        <i class="fa fa-calendar-check-o"></i>2024-11-10
+                        <i class="fa fa-calendar-check-o"></i>2025-08-10
                       </li>
                       <li class="text-center">
-                        <i class="fa fa-clock-o"></i> 13:25
+                        <i class="fa fa-clock-o"></i> 11:00
                       </li>
                     </ul>
                   </div>
                   <p class="text-center-sm">
                     <i class="fa fa-map-marker"></i>
                     <span>TƯ GIA NHÀ NỮ - </span>
-                    TP. Việt Trì, Phú Thọ.
+                    TP. Thái Bình, Thái Bình.
                   </p>
-                  <a class="text-center-sm" href="https://maps.app.goo.gl/hY3efbvCkrvQquyH7" target="_blank">Xem bản đồ
+                  <a class="text-center-sm" href="https://maps.app.goo.gl/J2yuJcVE3SECLM2a8" target="_blank">Xem bản đồ
                     <i class="fa fa-caret-right"></i></a>
-                  <div class="calendar-button">
-                    <div class="atcb">
-                      { "name":"LỄ CƯỚI NHÀ NỮ (Đám cưới Anh Tú và Tuyết Mai)", "description":"Cảm ơn bạn đã dành thời gian
-                      tham dự đám cưới của chúng tôi!,
-                      "startDate":"2024-11-02", "endDate":"2024-11-02",
-                      "startTime":"11:30", "endTime":"13:30", "location":"Số 47 xóm Trung Trên, thôn Nguyên Hanh, xã Văn Tự, huyện Thường Tín, TP Hà Nội",
-                      "options":["Apple","Google","iCal","Microsoft365","MicrosoftTeams","Outlook.com","Yahoo"],
-                      "timeZone":"Asia/Ho_Chi_Minh",
-                      "iCalFileName":"Reminder-Event", "listStyle":"modal",
-                      "label":"Thêm vào lịch", "trigger":"click" }
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -493,38 +481,29 @@
               <div class="row">
                 <div class="col-12 col-sm-12 col-md-5">
                   <div class="image-wrap">
-                    <img class="event-image"
-                      src="images/DSC00810.jpg"
-                      alt="LỄ CƯỚI NHÀ NAM" loading="lazy" />
+                    <img class="event-image" src="images/DSC00810.jpg" alt="LỄ CƯỚI NHÀ NAM" loading="lazy" />
                   </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-7">
                   <div class="event-title text-center-sm">
                     <ul>
                       <li class="text-center">
-                        <i class="fa fa-calendar-check-o"></i>2024-11-10
+                        <i class="fa fa-calendar-check-o"></i>2025-08-10
                       </li>
                       <li class="text-center">
-                        <i class="fa fa-clock-o"></i> 15:25
+                        <i class="fa fa-clock-o"></i> 11:00
                       </li>
                     </ul>
                   </div>
                   <p class="text-center-sm">
                     <i class="fa fa-map-marker"></i>
-                    <span>TƯ GIA NHÀ NAM - </span> Tp. Việt Trì, Phú Thọ
+                    <span>TƯ GIA NHÀ NAM - </span> Tp. Vĩnh Yên,Vĩnh Phúc
                   </p>
-                  <a class="text-center-sm" href="https://maps.app.goo.gl/hY3efbvCkrvQquyH7" target="_blank">Xem bản đồ
+                  <a class="text-center-sm" href="https://maps.app.goo.gl/D61NSZD7s6ACyEqk7" target="_blank">Xem bản đồ
                     <i class="fa fa-caret-right"></i></a>
                   <div class="calendar-button">
                     <div class="atcb">
-                      { "name":"LỄ CƯỚI NHÀ NAM (Đám cưới Anh Tú và Tuyết Mai)", "description":"Cảm ơn bạn đã dành thời gian tham
-                      dự đám cưới của chúng tôi!",
-                      "startDate":"2024-11-10", "endDate":"2024-11-10",
-                      "startTime":"11:30", "endTime":"13:30", "location":"Nhà Văn Hoá thôn Nguyên Hanh, xã Văn Tự, huyện Thường Tín, TP Hà Nội",
-                      "options":["Apple","Google","iCal","Microsoft365","MicrosoftTeams","Outlook.com","Yahoo"],
-                      "timeZone":"Asia/Ho_Chi_Minh",
-                      "iCalFileName":"Reminder-Event", "listStyle":"modal",
-                      "label":"Thêm vào lịch", "trigger":"click" }
+                      
                     </div>
                   </div>
                 </div>
@@ -561,11 +540,11 @@
               <h2>Love Quote</h2>
             </div>
             <p>
-              “ Một ngày nào đó chúng ta sẽ tìm thấy người ấy, người mà giữa hàng tỉ người trên thế giới
+              “"Nếu em sống đến 100 tuổi, anh muốn sống đến 99 – để không phải sống một ngày nào thiếu em." <br>" Một ngày nào đó chúng ta sẽ tìm thấy người ấy, người mà giữa hàng tỉ người trên thế giới
               này. <br>
               Và cách cô ấy tìm thấy tôi, chỉ là quẹt dạo trên FB.<br>
               Tích cực quẹt dạo vận may sẽ tới
-             ”
+              ”
             </p>
           </div>
         </div>
@@ -588,7 +567,7 @@
             src: "images/DSC00840.jpg",
             thumb:
               "images/DSC00840.jpg",
-            subHtml: `<div class="lg-sub-html"><h4>Tình yêu không chỉ là một danh từ - nó là một động từ; nó còn hơn cả một cảm giác - đó là sự quan tâm, chia sẻ, giúp đỡ, hy sinh</h4></div>`,
+            subHtml: `<div class="lg-sub-html"><h4>Tình Yêu là không nhìn nhau, mà là cùng nhìn về một hướng.</h4></div>`,
           });
         </script>
 
@@ -624,7 +603,7 @@
             src: "images/DSC01633.jpg",
             thumb:
               "images/DSC01633.jpg",
-            subHtml: `<div class="lg-sub-html"><h4>Vì vậy, để được ai đó nhìn thấy đầy đủ và được yêu mến dù thế nào đi nữa — đây là một sự dâng hiến của con người có thể là điều kỳ diệu</h4></div>`,
+            subHtml: `<div class="lg-sub-html"><h4>Tình yêu là điều duy nhất chúng ta không thể nhìn thấy, nhưng lại cảm nhận rõ ràng nhất.</h4></div>`,
           });
         </script>
 
@@ -660,7 +639,7 @@
             src: "images/DSC00904.jpg",
             thumb:
               "images/DSC00904.jpg",
-            subHtml: `<div class="lg-sub-html"><h4>Tôi có thể chinh phục thế giới bằng một tay miễn là bạn đang nắm tay kia</h4></div>`,
+            subHtml: `<div class="lg-sub-html"><h4>Tình yêu không làm thế giới quay, nhưng nó làm cuộc hành trình trở nên đáng giá.</h4></div>`,
           });
         </script>
 
@@ -696,7 +675,7 @@
             src: "images/DSC01604.jpg",
             thumb:
               "images/DSC01604.jpg",
-            subHtml: `<div class="lg-sub-html"><h4>Tôi yêu bạn vì tất cả những gì bạn đang có, tất cả những gì bạn đã có, và tất cả những gì bạn chưa hiện hữu</h4></div>`,
+            subHtml: `<div class="lg-sub-html"><h4>Không ai hoàn hảo, nhưng tình yêu khiến mọi thứ trở nên đủ đầy.</h4></div>`,
           });
         </script>
 
@@ -714,7 +693,7 @@
             src: "images/DSC00306.jpg",
             thumb:
               "images/DSC00306.jpg",
-            subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`,
+            subHtml: `<div class="lg-sub-html"><h4>Nếu em sống đến 100 tuổi, anh muốn sống đến 99 – để không phải sống một ngày nào thiếu em.</h4></div>`,
           });
         </script>
 
@@ -798,7 +777,7 @@
             </a>
           </div>
         </div>
-
+`
         <script type="text/javascript">
           photoGalleries.push({
             src: "images/DSC01384.jpg",
@@ -893,7 +872,7 @@
           photoGalleries.push({
             src: "images/DSC01679.jpg",
             thumb:
-                    "images/DSC01679.jpg",
+              "images/DSC01679.jpg",
             subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`,
           });
         </script>
@@ -920,7 +899,7 @@
       ">
     <div class="footer-note">
       <h1>Thank you!</h1>
-      <p>Thanh Xuân &amp; Phương Mai</p>
+      <p>Thanh Xuân &amp; Ánh Vân</p>
     </div>
     <div class="footer-copyright">
       <div class="container">
@@ -971,9 +950,9 @@
           <div class="donate-card">
             <h3>Mừng cưới đến cô dâu</h3>
             <img class="qr-code-image" src="images/qr_xuanpham.jpg" loading="lazy" />
-            <p>Ngân hàng: <strong>Techcombank</strong></p>
-            <p>Tên tài khoản: <strong>1903 7907 3870 13</strong></p>
-            <p>Số tài khoản: <strong>Hà Ánh Phương Mai</strong></p>
+            <p>Ngân hàng: <strong>MSB</strong></p>
+            <p>Tên tài khoản: <strong>0717777</strong></p>
+            <p>Số tài khoản: <strong>Nguyễn Thị Vân</strong></p>
 
             <div class="cryptos-box-view">
               <h5>
@@ -1032,7 +1011,7 @@
     const afterMessage = document.getElementById('after-message');
 
     const now = new Date();
-    const target = new Date(now.getTime() + 3000);
+    const target = new Date("2025/07/12");
 
     function updateCountdown() {
       const current = new Date();

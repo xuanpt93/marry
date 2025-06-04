@@ -75,6 +75,9 @@
     .slide-inner.slide-first {
         background-position: 43%;
     }
+    .popup img {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
