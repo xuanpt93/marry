@@ -110,11 +110,10 @@ body {
 }
 
 .card{
-    border: 1px solid;
     text-align: center;
     display: flex;
     justify-content: center;
-    background-image: url("../images/anhnen.jpg");
+    background-image: url("../images/DSC00228.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
