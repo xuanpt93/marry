@@ -122,12 +122,10 @@ body {
     padding-top: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
-    border-radius: 15px;
+    width: 33%;
 
 }
 
 .thiepmoiImg img{
     border-radius: 15px;
-    height: 400px;
-    width: 850px;
 }
